@@ -1,0 +1,33 @@
+public class Circle {
+    private double radius;
+    private double centerPointX;
+    private double centerPointY;
+
+    // Getter
+    public double getRadius() {
+        return radius;
+    }
+    public double getCenterPointX() {
+        return centerPointX;
+    }
+    public double getCenterPointY() {
+        return centerPointY;
+    }
+    // Setter
+    public void setRadius(double newRadius) {
+        this.radius = newRadius;
+    }
+    public void setCenterPointX (double newCenterPointX) {
+        this.centerPointX = newCenterPointX;
+    }
+    public void setCenterPointY (double newCenterPointY) {
+        this.centerPointY = newCenterPointY;
+    }
+
+    //Method
+    public double computeArea(double radius){
+        double area = 3.14*radius*radius;
+        return area;
+    }
+
+}
