@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+public class Shape {
+    public static void main(String[] args) {
+        Circle a = new Circle();
+        Scanner in = new Scanner(System.in);
+        System.out.println("What is the radius?");
+        a.setRadius(in.nextDouble());
+        System.out.println("What is the X coordinate of the center point?");
+        a.setCenterPointX(in.nextDouble());
+        System.out.println("What is the Y coordinate of the center point?");
+        a.setCenterPointY(in.nextDouble());
+        double r = a.getRadius();
+        double x = a.getCenterPointX();
+        double y = a.getCenterPointY();
+        System.out.println("The area of the circle is: " + a.computeArea(r));
+    }
+}
